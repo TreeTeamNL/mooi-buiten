@@ -2,7 +2,7 @@
 
 .wrapper {
   display: grid;
-  grid-template: 200px 550px repeat(6, 250px) / repeat(12, 1fr);
+  grid-template: 200px 650px repeat(4, 250px) / repeat(12, 1fr);
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -42,4 +42,7 @@
 }
 .img7 {
   grid-area: 7 / 7 / 8 / 12;
+}
+.img8 {
+  grid-area: 9 / 2 / 10 / 12;
 }
