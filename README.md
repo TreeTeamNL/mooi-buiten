@@ -37,6 +37,7 @@ This repo is fored from https://github.com/Mees100/mooi-buiten
 To develop this website, you need:
 
 - [node](https://nodejs.org/en)
+   - One option is to install it with [nvm](https://github.com/nvm-sh/nvm), and run `nvm use`
 
 After cloning the repository with git, you should first install the depencies with `npm install`.
 
