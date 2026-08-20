@@ -1,0 +1,14 @@
+# Prevent commit with large files
+check_large_files() {
+  echo "Checking for large files..."
+  files=$(git diff --cached --name-only | xargs ls -l | awk '$5 > 2000000 {print}')
+  if [ "$files" ]; then
+    echo "\e[31m" "Error: Found large files:\n$files"
+    exit 1
+  fi
+  echo "\e[32m" "✔︎ No large files found!"
+}
+
+
+npm run lint
+check_large_files
